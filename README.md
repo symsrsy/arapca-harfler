@@ -11,10 +11,3 @@ Veritabanı gerektirmeyen, HTML/CSS/JavaScript ile hazırlanmış küçük bir e
 - Boşluk tuşu ile rastgele harf getirin.
 - `C` tuşu ile cevabı açıp kapatın.
 
-## GitHub Pages
-
-1. Dosyaları GitHub deposuna yükleyin.
-2. Repository > Settings > Pages bölümüne gidin.
-3. Source olarak `Deploy from a branch` seçin.
-4. Branch olarak `main`, klasör olarak `/root` seçin.
-5. Save'e basın.
