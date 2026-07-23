@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arapça Harfler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Kur'an Harfleri</p>
+        <h1>Arapça Harfler</h1>
+        <p class="subtitle">Harfi gör, tahmin et, cevabı kontrol et.</p>
+      </div>
+
+      <button id="fullscreenBtn" class="icon-btn" type="button" aria-label="Tam ekran">
+        ⛶
+      </button>
+    </header>
+
+    <section class="progress-area" aria-label="İlerleme">
+      <div class="progress-text"><span id="currentNumber">1</span> / <span id="totalNumber">29</span></div>
+      <div class="progress-track">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+    </section>
+
+    <section class="letter-section">
+      <button id="prevBtn" class="nav-btn" type="button" aria-label="Önceki harf">‹</button>
+
+      <article class="letter-card">
+        <div id="letter" class="letter" lang="ar" dir="rtl">ا</div>
+      </article>
+
+      <button id="nextBtn" class="nav-btn" type="button" aria-label="Sonraki harf">›</button>
+    </section>
+
+    <section class="controls">
+      <button id="randomBtn" class="primary-btn" type="button">🎲 Rastgele Sor</button>
+
+      <button id="answerBtn" class="secondary-btn" type="button" aria-expanded="false">
+        Cevabı Göster
+      </button>
+
+      <div id="answerBox" class="answer-box" hidden>
+        <span id="answer">Elif</span>
+      </div>
+    </section>
+
+    <p class="hint">Yeni harf geldiğinde cevap otomatik olarak gizlenir.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
